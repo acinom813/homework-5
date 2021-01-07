@@ -14,6 +14,11 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"
+    />
+   
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -29,91 +34,66 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
-        <div class = "row" id="sevenAM"> 
-            <div class ="column .col-lg-2" id="hour7" style="background:powderblue;">07:00 AM</div>
-            <div class ="column .col-lg-2" id="userInput7" style="background:plum;">Event/Notes:</div>
-            <div class ="column .col-lg-2" id="saveEvent7" style="background: purple;">
-                <btn>Save</btn>
-            </div>
-        </div>
-        <div class = "row" id="eightAM">  
-            <div class ="column .col-lg-2" id="hour8" style="background:powderblue;">08:00 AM</div>
-            <div class ="column .col-lg-8" id="userInput8" style="background:plum;">Event/Notes:</div>
-            <div class ="column .col-lg-2" id="saveEvent8" style="background: purple;">
-                <btn>Save</btn>
-        </div>
-        </div>
-        <div class = "row" id="nineAM"> 
-            <div class ="column .col-lg-2" id="hour9" style="background:powderblue;">09:00 AM</div>
-            <div class ="column .col-lg-8" id="userInput9" style="background:plum;">Event/Notes:</div>
-            <div class ="column .col-lg-2" id="saveEvent9" style="background: purple;">
-                <btn>Save</btn>
-        </div>
-        </div>
-        <div class = "row" id="tenAM"> 
-            <div class ="column .col-lg-2" id="hour10" style="background:powderblue;">10:00 AM</div>
-            <div class ="column .col-lg-8" id="userInput10" style="background:plum;">Event/Notes:</div>
-            <div class ="column .col-lg-2" id="saveEvent10" style="background: purple;">
-                <btn>Save</btn>
-        </div>
-        </div>
-        <div class = "row" id="elevenAM"> 
-            <div class ="column .col-lg-2" id="hour11" style="background:powderblue;">11:00 AM</div>
-            <div class ="column .col-lg-8" id="userInput11" style="background:plum;">Event/Notes:</div>
-            <div class ="column .col-lg-2" id="saveEvent11" style="background: purple;">
-                <btn>Save</btn>
-        </div>
-        </div>
-        <div class = "row" id="twelvePM"> 
-            <div class ="column .col-lg-2" id="hour12" style="background:powderblue;">12:00 PM</div>
-            <div class ="column .col-lg-8" id="userInput12" style="background:plum;">Event/Notes:</div>
-            <div class ="column .col-lg-2" id="saveEvent12" style="background: purple;">
-                <btn>Save</btn>
-        </div>
-        </div>
-        <div class = "row" id="onePM"> 
-            <div class ="column .col-lg-2" id="hour1" style="background:powderblue;">01:00 PM</div>
-            <div class ="column .col-lg-8" id="userInput1" style="background:plum;">Event/Notes:</div>
-            <div class ="column .col-lg-2" id="saveEvent1" style="background: purple;">
-                <btn>Save</btn>
-        </div>
-        </div>
-        <div class = "row" id="twoPM"> 
-            <div class ="column .col-lg-2" id="hour2" style="background:powderblue;">02:00 PM</div>
-            <div class ="column .col-lg-8" id="userInput2" style="background:plum;">Event/Notes:</div>
-            <div class ="column .col-lg-2" id="saveEvent2" style="background: purple;">
-                <btn>Save</btn>
-        </div>
-        </div>
-        <div class = "row" id="threePM"> 
-            <div class ="column .col-lg-2" id="hour3" style="background:powderblue;">03:00 PM</div>
-            <div class ="column .col-lg-8" id="userInput3" style="background:plum;">Event/Notes:</div>
-            <div class ="column .col-lg-2" id="saveEvent3" style="background: purple;">
-                <btn>Save</btn>
-        </div>
-        </div>
-        <div class = "row" id="fourPM"> 
-            <div class ="column .col-lg-2" id="hour4" style="background:powderblue;">04:00 PM</div>
-            <div class ="column .col-lg-8" id="userInput4" style="background:plum;">Event/Notes:</div>
-            <div class ="column .col-lg-2" id="saveEvent4" style="background: purple;">
-                <btn>Save</btn>
-        </div>
-        </div>
-        <div class = "row" id="fivePM"> 
-            <div class ="column .col-lg-2" id="hour5" style="background:powderblue;">05:00 PM</div>
-            <div class ="column .col-lg-8" id="userInput5" style="background:plum;">Event/Notes:</div>
-            <div class ="column .col-lg-2" id="saveEvent5" style="background: purple;">
-                <btn>Save</btn>
-        </div>
-        </div>
-        <div class = "row" id="sixPM"> 
-            <div class ="column .col-lg-2" id="hour6" style="background:powderblue;">06:00 PM</div>
-            <div class ="column .col-lg-8" id="userInput6" style="background:plum;">Event/Notes:</div>
-            <div class ="column .col-lg-2" id="saveEvent6" style="background: purple;">
-                <btn>Save</btn>
-        </div>
-        </div>
+     
+
+ <!-- Timeblocks go here -->
+
+      <div id="hour-8" class="row time-block">
+        <div class="col-md-1 hour">    8AM  </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+      <div id="hour-9" class="row time-block">
+        <div class="col-md-1 hour">    9AM  </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+      <div id="hour-10" class="row time-block">
+        <div class="col-md-1 hour">    10AM  </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+      <div id="hour-11" class="row time-block">
+        <div class="col-md-1 hour">    11AM  </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+      <div id="hour-12" class="row time-block">
+        <div class="col-md-1 hour">    12PM  </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div> 
+      <div id="hour-1" class="row time-block">
+        <div class="col-md-1 hour">    1PM  </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div> 
+      <div id="hour-2" class="row time-block">
+        <div class="col-md-1 hour">    2PM  </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div> 
+      <div id="hour-3" class="row time-block">
+        <div class="col-md-1 hour">    3PM  </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div> 
+      <div id="hour-4" class="row time-block">
+        <div class="col-md-1 hour">    4PM  </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div> 
+      <div id="hour-5" class="row time-block">
+        <div class="col-md-1 hour">    5PM  </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div> 
+      <div id="hour-6" class="row time-block">
+        <div class="col-md-1 hour">    6PM  </div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div> 
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
