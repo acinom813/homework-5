@@ -5,5 +5,5 @@ This application was designed for a busy employee who is in need of organizing t
 
 
 
-![](Assets/05-third-party-apis-homework-demo.gif)
+05-third-party-apis-homework-demo.gif
 
